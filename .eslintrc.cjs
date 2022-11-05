@@ -6,7 +6,8 @@ module.exports = {
     "extends": [
         "airbnb-base",
         "airbnb-typescript/base",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
     ],
     "overrides": [
     ],
@@ -17,9 +18,25 @@ module.exports = {
         "project": "./tsconfig.json"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint", "prettier"
     ],
     "rules": {
-        "no-console": "error"
+        "no-console": "error",
+      "prettier/prettier": [
+        "error", {
+          "semi": true,
+          "singleQuote": true,
+          "trailingComma": "es5",
+          "bracketSpacing": true,
+          "bracketSameLine": false,
+          "printWidth": 80,
+          "quoteProps": "as-needed",
+          "proseWrap": "always",
+          "endOfLine": "lf",
+          "singleAttributePerLine": false,
+          "htmlWhitespaceSensitivity": "css",
+          "arrowParens": "avoid"
+        }
+      ]
     }
 }
