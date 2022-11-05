@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Validation</title>
-  </head>
-  <body>
-  <div class='flex items-center justify-center h-screen w-screen'>
-	  <form id='form'>
-		  <h2 class='text-3xl'>Register With Us</h2>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8' />
+	<link href='/vite.svg' rel='icon' type='image/svg+xml' />
+	<meta content='width=device-width, initial-scale=1.0' name='viewport' />
 
-		  <div>
-			  <label for='username'>Username</label>
-			  <input type='text' id='username' placeholder='Enter username'>
-			  <small>Error message</small>
-		  </div>
+	<!-- Google Fonts: Open Sans -->
+	<link href='https://fonts.googleapis.com' rel='preconnect'>
+	<link crossorigin href='https://fonts.gstatic.com' rel='preconnect'>
+	<link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap'
+		rel='stylesheet'>
 
-		  <div>
-			  <label for='email'>Email</label>
-			  <input type='text' id='email' placeholder='Enter email'>
-			  <small>Error message</small>
-		  </div>
+	<title>Form Validation</title>
+</head>
+<body class='flex items-center justify-center min-h-screen bg-[#f9fafb]'>
+<div class='bg-white rounded-md shadow-lg w-[400px]'>
+	<form class='px-8 py-10' id='form'>
+		<h2 class='text-3xl text-center mb-6'>Register With Us</h2>
 
-		  <div>
-			  <label for='password'>Password</label>
-			  <input type='password' id='password' placeholder='Enter password'>
-			  <small>Error message</small>
-		  </div>
+		<div class='mb-3 relative pb-6'>
+			<label class='text-[#777] block mb-1' for='username'>Username</label>
+			<input
+				class='border focus:outline-none focus-visible:ring ring-black ring-offset-2 rounded text-base border-[#f0f0f0] block w-full p-3'
+				id='username'
+				placeholder='John Doe'
+				type='text'>
+			<small class='text-[#e74c3c] absolute bottom-0 left-0 invisible'>Error
+				message</small>
+		</div>
 
-		  <div>
-			  <label for='password2'>Confirm Password</label>
-			  <input type='password' id='password2'
-				  placeholder='Enter password again'>
-			  <small>Error message</small>
-		  </div>
 
-		 <button type='submit'>Submit</button>
-	  </form>
-  </div>
+		<div class='mb-3 relative pb-6'>
+			<label class='text-[#777] block mb-1' for='email'>Email</label>
+			<input
+				class='border focus:outline-none focus-visible:ring ring-black ring-offset-2 rounded text-base border-[#f0f0f0] block w-full p-3'
+				id='email'
+				placeholder='john_doe@email.com'
+				type='text'>
+			<small class='text-[#e74c3c] absolute bottom-0 left-0 invisible'>Error
+				message</small>
+		</div>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+		<div class='mb-3 relative pb-6'>
+			<label class='text-[#777] block mb-1' for='password'>Password</label>
+			<input
+				class='border focus:outline-none focus-visible:ring ring-black ring-offset-2 rounded text-base border-[#f0f0f0] block w-full p-3'
+				id='password'
+				placeholder='Enter password'
+				type='password'>
+			<small class='text-[#e74c3c] absolute bottom-0 left-0 invisible'>Error
+				message</small>
+		</div>
+
+		<div class='mb-3 relative pb-6'>
+			<label class='text-[#777] block mb-1' for='password2'>Confirm
+				Password</label>
+			<input
+				class='border focus:outline-none focus-visible:ring ring-black ring-offset-2 rounded text-base border-[#f0f0f0] block w-full p-3'
+				id='password2'
+				placeholder='Enter password again'
+				type='text'>
+			<small class='text-[#e74c3c] absolute bottom-0 left-0 invisible'>Error
+				message</small>
+		</div>
+
+		<button
+			class='cursor-pointer bg-[#3498db] border border-[#3498db] rounded text-white block text-lg p3 mt-5 w-full' type='submit'>Submit</button>
+	</form>
+</div>
+
+<script src='/src/main.ts' type='module'></script>
+</body>
 </html>
