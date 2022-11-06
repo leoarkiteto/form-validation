@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-	<meta charset='UTF-8' />
-	<link href='/vite.svg' rel='icon' type='image/svg+xml' />
-	<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link href="/vite.svg" rel="icon" type="image/svg+xml" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-	<title>Form Validation</title>
-</head>
-<body >
-<h1>Hello World</h1>
-
-<script src='/src/main.js' type='module'></script>
-</body>
+		<title>Form Validation</title>
+	</head>
+	<body>
+		<form id="form">
+			<label for="username">USERNAME:</label>
+			<input id="username" type="text" />
+			<label for="email">EMAIL:</label>
+			<input id="email" type="email" />
+			<label for="password">PASSWORD:</label>
+			<input id="password" type="password" />
+			<label for="password1">CONFIRM PASSWORD:</label>
+			<input id="password1" type="password1" />
+			<button type="submit">click here</button>
+		</form>
+		<script src="/src/main.js" type="module"></script>
+	</body>
 </html>
