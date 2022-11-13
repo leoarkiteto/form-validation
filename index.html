@@ -4,21 +4,57 @@
 		<meta charset="UTF-8" />
 		<link href="/vite.svg" rel="icon" type="image/svg+xml" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
 		<title>Form Validation - Felipe</title>
+		<style>
+			.container {
+				height: 200px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: center;
+				background-position: gray;
+				border:
+			}
+			.vertical-center {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+			</style>
 	</head>
 	<body>
-		<form id="form">
-			<label for="username">USERNAME:</label>
-			<input id="username" type="text" />
-			<label for="email">EMAIL:</label>
-			<input id="email" type="email" />
-			<label for="password">PASSWORD:</label>
-			<input id="password" type="password" />
-			<label for="password1">CONFIRM PASSWORD:</label>
-			<input id="password1" type="password1" />
-			<button type="submit">click here</button>
-		</form>
+			<div class="container">
+				<div class="vertical-center">
+					<form id="form">
+						<h1> Register With Us</h1>
+						<label for="username">Username:</label>
+						<br>
+						<input id="username" type="text" />
+						<br>
+						<br>
+						<label for="email"> Email:</label>
+						<br>
+						<input id="email" type="email" />
+						<br>
+						<br>
+						<label for="password">Password:</label>
+						<br>
+						<input id="password" type="password" />
+						<br>
+						<br>
+						<label for="password1">Confirm Password:</label>
+						<br>
+						<input id="password1" type="password1" />
+						<br>
+						<br>
+						<button type="submit">click here</button>
+						<br>
+						<br>
+					</form>
+				</div>
+			</div>	
 		<script src="/src/main.js" type="module"></script>
 	</body>
 </html>
